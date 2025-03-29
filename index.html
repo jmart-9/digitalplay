@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- IMPORTACIÓN DEL ICONO DE MENU MOVIL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- IMPORTACIÓN DE LOS SCRIPTS -->
+    <script src="js/carouselscript.js" defer></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/toggleMenu.js"></script>
+</head>
+<body>
+    <!-- HEADER DONDE ESTA ALMACENADO EL MENU -->
+    <header class="header">
+        <a href="#header" class="logo">
+            <img src="images/icons/Logo.png" alt="Company Logo" >
+        </a>
+        <nav class="navbar">
+            <ul id="menuList" class="nav-links-left">
+                <li><a href="#home-section" class="nav-item" onclick="setActive(event)" >Home</a></li>
+                <li><a href="" class="nav-item" onclick="setActive(event)">Planes</a></li>
+                <li><a href="" class="nav-item" onclick="setActive(event)">Speed Test</a></li>
+            </ul>
+            <a href="" class="btnCall"><button>CONTRATA AHORA</button></a>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars hamburger" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN DONDE SE ENCUENTRA EL CUERPO DE LA PAGINA -->
+    <main>
+        <!-- SECCIÓN PRINCIPAL DE LA PAGINA, DONDE SE ENCUENTRA EL CARRUSEL DE LAS IMAGENES Y EL CONTENIDO PRINCIPAL -->
+         <section id="home-section" class="home-section">
+            <div id="home" class="home">
+                <img src="images/carrusel/astronauta1.jpg" alt="images carrousel 2">
+                <h1>CONECTATE AL INSTANTE <br> Y VIVE LA VELOCIDAD <br>SIN ESPERA</h1>
+                <div class="conatiner-button-home">
+                    <a href="" class="btnUnete"><button>UNETE</button></a>
+                </div> 
+            </div>
+            
+         </section>
+    </main>
+</body>
+</html>
