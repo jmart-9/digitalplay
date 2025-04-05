@@ -48,7 +48,7 @@ body{
     display: grid;
     grid-template-rows: 100px 1fr;
     color: white;
-    background-color: #5f5f5f;
+    background-color: #0000006c;
     z-index: -2;
 }
 
