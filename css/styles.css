@@ -185,6 +185,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    background-color: #ff7c64;
 }
 .title-internet h2{
     color: #db2909;
