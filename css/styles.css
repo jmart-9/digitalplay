@@ -1,0 +1,420 @@
+/*Importación de la fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Manrope:wght@200..800&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+/*FUENTES DISPONIBLES ESA EXPORTACIÓN*/
+/*
+bree serif: font-family: "Bree Serif", serif;
+oswald: font-family: "Oswald", sans-serif;
+roboto: font-family: "Roboto Slab", serif;
+manrope: font-family: "Manrope", sans-serif;
+bebas neue: font-family: "Bebas Neue", sans-serif;
+*/
+
+.nav-logo{
+    width: 150px;
+}
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+    
+    
+body{
+    font-family: 'font-family: "Oswald", serif;' 
+}
+.container-nav{
+    width: 100%;
+    height: 75px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.034);
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.596);
+}
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: white;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #ff00003f 0%, #0000008c 35%), url('../images/velocidad.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%, 0 100%);
+    z-index: -1;
+}
+
+/* NAV */
+.nav{
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-logo{
+    font-weight: 200px;
+    margin-left: 15px;
+}
+
+.nav-link{
+    font-family: "Manrope", sans-serif;
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav-link a:hover {
+    color: rgb(236, 87, 0);
+}
+
+.nav-items{
+    list-style: none;
+}
+
+.nav-links{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+.nav-menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-close{
+    display: none;
+}
+
+.nav-img-menu{
+    display: block;
+    width: 30px;
+}
+
+/*HERO CONTAINER*/
+
+.hero-section{
+    display: grid;
+    grid-auto-rows: max-content;
+}
+
+.hero-container{
+    max-width: 1250px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 1em;
+    padding-bottom: 100px;
+
+}
+.hero-container h1{
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: "Oswald", sans-serif;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-shadow: 8px 8px 5px #ff1e0042,
+    3px 3px 2px #db2c0050,
+    4px 4px 2px #ff330049,
+    5px 5px 5px #ffffff2a;
+}
+
+.hero-paragraph {
+    margin-bottom: 20px;
+    font-family: "Roboto", serif;
+    font-size: 1.10rem;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-shadow:  2px 2px 6px #ffffff;
+}
+/*BOTON DE UNETE AHORA*/
+
+.cta {
+    display: inline-block;
+    background-color: orangered;
+    justify-items: center;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    font-size: 20pt;
+    font-family: "Bebas Neue", sans-serif;
+
+    margin-left: 1050px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.774);  
+}
+
+.cta:active{
+    background-color: rgb(0, 0, 66);
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px rgba(34, 0, 128, 0.904);
+}
+
+/*MAIN - CONTENIDO PRINCIPAL*/
+
+.container-section-internet{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.title-internet h2{
+    color: #db2909;
+    font-family: "Bree Serif", serif;
+    font-size: 2.25rem;
+    text-shadow: 8px 8px 10px #000000da,
+    3px 3px 8px #1900ffda,
+    4px 4px 5px #1d0085da,
+    5px 5px 5px #33ff00a1;
+}
+.section-internet {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px;
+}
+.container-cards-internet{
+    display: flex;
+    margin: 15px 0px 0px 0px;
+    padding: 50px 50px;
+    flex-direction: row;
+    gap: 50px;
+}
+.cards-internet{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    gap: 15px;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.774);  
+}
+.container-card-title{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.container-card-title h3{
+    color: rgb(18, 216, 61);
+    font-family: "Oswald", sans-serif;
+    font-size: 26pt;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.container-card-title p{
+    color: rgb(15, 3, 180);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20pt;
+    padding-top: 15px;
+}
+.container-card-title1{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.container-card-title1 h3{
+    color: #e64cbf;
+    font-family: "Oswald", sans-serif;
+    font-size: 26pt;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.container-card-title2{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.container-card-title2 h3{
+    color: #e64c4c;
+    font-family: "Oswald", sans-serif;
+    font-size: 26pt;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.container-card-title2 p{
+    color: rgb(15, 3, 180);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20pt;
+    padding-top: 15px;
+}
+.container-card-title1 p{
+    color: rgb(15, 3, 180);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20pt;
+    padding-top: 15px;
+}
+.container-card-informacion{
+    background-color: #4ce654;
+    border-radius: 0 0 20px 20px;
+    padding: 30px;
+}
+.container-card-informacion1{
+    background-color: #e64cbf;
+    border-radius: 0 0 20px 20px;
+    padding: 30px;
+}
+.container-card-informacion2{
+    background-color: #e64c4c;
+    border-radius: 0 0 20px 20px;
+    padding: 30px;
+}
+.container-card-informacion p{
+    font-family: "Manrope", sans-serif;
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+.li-card{
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+.container-card-informacion1 p{
+    font-family: "Manrope", sans-serif;
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+.container-card-informacion2 p{
+    font-family: "Manrope", sans-serif;
+    font-size: 12pt;
+    margin-bottom: 10px;}
+.container-list-card {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; 
+}
+
+.li-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.check-icon {
+  color: green;
+  font-size: 16px;
+}
+
+.check-text {
+  text-align: left;
+}
+
+/*BOTON DE CARDS*/
+.btn-solicitar {
+    display: inline-block;
+    background-color: rgba(4, 0, 255, 0.507);
+    justify-items: center;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    font-size: 16pt;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 15px 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(25, 0, 255, 0.774);  
+}
+
+.btn-solicitar:active{
+    background-color: rgba(161, 0, 0, 0.699);
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px rgba(34, 0, 128, 0.904);
+}
+
+/*MEDIA QUERIES*/
+
+@media (700px <= width <= 1250px) {
+    .header {
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 5vw;
+        padding: 1vw 4%;
+        }
+        .nav {
+            display: flex;
+            flex-direction: row;
+        }
+        .nav-link {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            padding-top: .5vw;
+            padding-right: .5vw;
+        }
+}
+@media (min-width: 300px) and (max-width: 700px) {
+    .header {
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 5vw;
+        padding: 1vw 4%;
+        }
+        .nav {
+            display: flex;
+            flex-direction: row;
+        }
+        .nav-link {
+            display: none;
+        }
+        .nav-menu {
+            display: block;
+            position: absolute;
+            top: 15px; /* Ajusta según sea necesario */
+            right: 15px; /* Ajusta según sea necesario */
+            width: 75px; /* Define un ancho si es necesario */
+            height: 75px;
+            cursor: pointer;
+            filter: invert(100%);
+        }
+
+        .nav-img-menu {
+            width: 50px; /* Define un ancho si es necesario */
+            height: 50px;
+        }
+        .hero-container h1{
+            padding-left: 20px;
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            text-shadow: 8px 8px 5px #ff1e0042,
+            3px 3px 2px #db2c0050,
+            4px 4px 2px #ff330049,
+            5px 5px 5px #ffffff2a;
+
+        }
+
+}

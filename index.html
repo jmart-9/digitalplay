@@ -1,51 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-
-    <!-- STYLE -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- IMPORTACIÓN DEL ICONO DE MENU MOVIL -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- IMPORTACIÓN DE LOS SCRIPTS -->
-    <script src="js/carouselscript.js" defer></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/toggleMenu.js"></script>
+    <title>Digital Play</title>
+    <link rel="shortcut icon" href="./images/icon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- HEADER DONDE ESTA ALMACENADO EL MENU -->
-    <header class="header">
-        <a href="#header" class="logo">
-            <img src="images/icons/Logo.png" alt="Company Logo" >
-        </a>
-        <nav class="navbar">
-            <ul id="menuList" class="nav-links">
-                <li><a href="#home-section" class="nav-item" onclick="setActive(event)" >Inicio</a></li>
-                <li><a href="" class="nav-item" onclick="setActive(event)">Planes</a></li>
-                <li><a href="" class="nav-item" onclick="setActive(event)">Test de velocidad</a></li>
-                <li><a href="" class="nav-item" onclick="setActive(event)">Promociones</a></li>
-            </ul>
-            <a href="" class="btnCall"><button>CONTRATA AHORA</button></a>
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars hamburger" onclick="toggleMenu()"></i>
+    <header class="hero">
+        <div class="container-nav">
+            <nav class="nav container">
+                <div class="nav-logo">
+                    <img src="./images/logo.png" alt="Logo" class="nav-logo">
+                </div>
+                <ul class="nav-link nav-link-menu">
+                    <li class="nav-items"><a href="#" class="nav-links">Inicio</a></li>
+                    <li class="nav-items"><a href="#" class="nav-links" onclick="setActive(event)">Planes</a></li>
+                    <li class="nav-items"><a href="#" class="nav-links">Test de velocidad</a></li>
+                    <li class="nav-items"><a href="#" class="nav-links">Promociones</a></li>
+                </ul>
+                <img src="./images/icon/cerrar.svg" class="nav-close" alt="cerrar">
+                <div class="nav-menu">
+                    <img src="./images/icon/menu.svg" class="nav-img-menu" alt="menu">
+                </div>
+            </nav>
+        </div>
+        <section class="hero-section">
+            <div class="hero-container container">
+                <h1 class="hero-title">CONECTATE <br>
+                    AL INSTANTE <br>
+                    Y VIVE LA VELOCIDAD 
+                    <br> SIN ESPERAS
+                </h1>
+                <p class="hero-paragraph">
+                    Velocidad sin límites, conexión sin interrupciones. Digital Play te lleva <br>
+                    al futuro con fibra óptica de alta velocidad. ¡Únete hoy y navega como nunca antes!
+                </p>
+                <a href="#" class="cta">Únete ahora</a>
             </div>
-        </nav>
+        </section>
     </header>
-    <!-- MAIN DONDE SE ENCUENTRA EL CUERPO DE LA PAGINA -->
-    <main>
-        <!-- SECCIÓN PRINCIPAL DE LA PAGINA, DONDE SE ENCUENTRA EL CARRUSEL DE LAS IMAGENES Y EL CONTENIDO PRINCIPAL -->
-         <section id="home-section" class="home-section">
-            <div id="home" class="home">
-                <img src="images/carrusel/astronauta1.jpg" alt="images carrousel 2">
-                <h1>CONECTATE<br>AL INSTANTE<br>Y VIVE LA VELOCIDAD<br>SIN ESPERA</h1>
-                <div class="conatiner-button-home">
-                    <a href="" class="btnUnete"><button>UNETE</button></a>
-                </div> 
+    <main class="contenido-principal">
+        <section class="container-section-internet">
+            <div class="section-internet">
+                <div class="title-internet">
+                    <h2>¡CONTRATA EL INTERNET DE MÁS ALTO NIVEL!</h2>
+                </div>
+                <div class="container-cards-internet">
+                    <article class="cards-internet">
+                        <div class="container-card-title">
+                            <h3>BASICO</h3>
+                            <p>20 MB</p>
+                        </div>
+                        <div class="container-card-informacion">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in exercitationem mollitia </p>
+                            <ul class="container-list-card">
+                                <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Lorem ipsum dolor sit amet</span>
+                                  </li>
+                                  <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Proin euismod magna nec dolor</span>
+                                  </li>
+                                  <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Lorem ipsum dolor sit amet</span>
+                                  </li>
+                                  <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Morbi vel tellus a lectus</span>
+                            </ul>
+                            <a href="" class="btn-solicitar">Solicitar Paquete</a>
+                        </div>
+                    </article>
+                    <article class="cards-internet">
+                        <div class="container-card-title1">
+                            <h3>ESTANDAR</h3>
+                            <p>50 MB</p>
+                        </div>
+                        <div class="container-card-informacion1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in exercitationem mollitia </p>
+                            <ul class="container-list-card">
+                                <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Lorem ipsum dolor sit amet</span>
+                                  </li>
+                                  <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Proin euismod magna nec dolor</span>
+                                  </li>
+                                  <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Lorem ipsum dolor sit amet</span>
+                                  </li>
+                                  <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Morbi vel tellus a lectus</span>
+                            </ul>
+                            <a href="" class="btn-solicitar">Solicitar Paquete</a>
+                        </div>
+                    </article>
+                    <article class="cards-internet">
+                        <div class="container-card-title2">
+                            <h3>AVANZADO</h3>
+                            <p>100 MB</p>
+                        </div>
+                        <div class="container-card-informacion2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in exercitationem mollitia</p>
+                            <ul class="container-list-card">
+                                <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Lorem ipsum dolor sit amet</span>
+                                  </li>
+                                  <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Proin euismod magna nec dolor</span>
+                                  </li>
+                                  <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Lorem ipsum dolor sit amet</span>
+                                  </li>
+                                  <li class="li-card">
+                                    <span class="check-icon">✔</span> <span class="check-text">Morbi vel tellus a lectus</span>
+                                  </li>
+                            </ul>
+                            <a href="" class="btn-solicitar">Solicitar Paquete</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-         </section>
+        </section>
     </main>
+    <script src="js/navbar.js"></script>
 </body>
 </html>
