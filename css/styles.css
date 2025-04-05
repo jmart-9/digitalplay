@@ -39,7 +39,6 @@ body{
     padding: var(--padding-container);
 }
 
-
 .hero{
     width: 100%;
     height: 100vh;
@@ -49,6 +48,8 @@ body{
     display: grid;
     grid-template-rows: 100px 1fr;
     color: white;
+    background-color: #333333;
+    z-index: -2;
 }
 
 .hero::before{
@@ -58,7 +59,8 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #ff00003f 0%, #0000008c 35%), url('../images/velocidad.jpg');
+    background-color: green;
+    background-image: linear-gradient(180deg, #0000003f 0%, #0000008c 35%), url('../images/velocidad.jpg');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%, 0 100%);
     z-index: -1;
