@@ -33,10 +33,9 @@ body{
 }
 .container {
     width: 100%;
-    max-width: 1250px;
+    max-width: 1350px;
     margin: 0 auto;
     overflow: hidden;
-    padding: var(--padding-container);
 }
 
 .hero{
@@ -350,7 +349,129 @@ body{
     transform: translateY(-2px);
     box-shadow: 0px 10px 20px 2px rgba(34, 0, 128, 0.904);
 }
+.section-informacion-caracteristicas h2{
+    margin-top: 25px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Bree Serif", serif;
+    font-size: 3rem;
+}
+.section-caracteristicas{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+.caracteristicas-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.card-caracteristica{
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.596);
+}
+.image-class-card img{
+    width: 75px;
+    margin: 10px;
+}
+.container-image-refer img{
+    width: 850px;
+    margin-left: 20px;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+.cards-explicacion-caracteristica h3{
+    font-family: "Manrope", sans-serif;
+    font-size: 12pt;
+}
+.cards-explicacion-caracteristica p{
+    margin: 10px;
+    font-family: "Manrope", sans-serif;
+    font-size: 10pt;
+    text-align: justify;
+}
+.footer-inicio{
+    display: flex;
+    flex-direction: row;
+    background-color: #18191b;
+    color: white;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+}
+.informacion-company{
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 400px;
 
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+.copyrigth{
+    background-color: #001A49;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.copyrigth h4{
+    font-family: "Roboto Slab", serif;
+    font-size: .70rem;
+    margin-left: 25px;
+}
+.informacion-company img{
+    width: 175px;
+}
+.informacion-company h3{
+    margin-top: 25px;
+    margin-left: 20px;
+    font-family: "Roboto Slab", serif;
+}
+.informacion-company p{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 300px;
+    font-family: "Roboto Slab", serif;
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+}
+
+.facebook img{
+    width: 40px;
+    margin-left: 650px;
+    margin-top: 100px;
+}
+.facebook a{
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+    font-family: "Bree Serif", serif;
+}
+.instagram img{
+    width: 40px;
+    margin-top: 25px;
+    margin-left: 650px;
+}
+.instagram a{
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+    font-family: "Bree Serif", serif;
+}
 /*MEDIA QUERIES*/
 
 @media (700px <= width <= 1250px) {
