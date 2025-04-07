@@ -137,7 +137,7 @@ body{
     padding-top: 30px;
     padding-left: 20px;
     font-family: "Oswald", sans-serif;
-    font-size: 3em;
+    font-size: 3rem;
     color: rgb(255, 255, 255);
     text-shadow: 8px 8px 5px #ff1e0042,
     3px 3px 2px #db2c0050,
@@ -149,9 +149,9 @@ body{
     margin-bottom: 20px;
     font-family: "Roboto", serif;
     font-size: 1.10rem;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 20px;
-    text-shadow:  2px 2px 6px #ffffff;
+    text-shadow:  1px 1px 50px #ffffff;
 }
 /*BOTON DE UNETE AHORA*/
 
@@ -165,7 +165,7 @@ body{
     width: 150px;
     font-size: 20pt;
     font-family: "Bebas Neue", sans-serif;
-    margin-left: 1050px;
+    margin-left: 75%;
     padding: 15px 20px;
     border-radius: 15px;
     box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.774); 
@@ -185,13 +185,21 @@ body{
     background-color: #fcb8ac;
 }
 .title-internet h2{
-    color: #db2909;
+    color: rgb(255, 255, 255);
     font-family: "Bree Serif", serif;
     font-size: 2.25rem;
     text-shadow: 8px 8px 10px #000000da,
-    3px 3px 8px #1900ffda,
-    4px 4px 5px #1d0085da,
-    5px 5px 5px #33ff00a1;
+    3px 3px 8px #ff6b15da,
+    4px 4px 5px #fd7f18da,
+    5px 5px 5px #ff0000c4;
+}
+.title-internet h3{
+    color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;
+    font-size: 26pt;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0),
+    3px 3px 8px rgb(0, 0, 0),
+    3px 3px 8px rgb(255, 17, 0);
 }
 .section-internet {
     width: 100%;
@@ -223,13 +231,13 @@ body{
     padding-bottom: 10px;
 }
 .container-card-title h3{
-    color: rgb(18, 216, 61);
+    color: rgb(191, 150, 112);
     font-family: "Oswald", sans-serif;
     font-size: 26pt;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .container-card-title p{
-    color: rgb(15, 3, 180);
+    color: rgba(58, 28, 231, 0.884);
     font-family: "Bebas Neue", sans-serif;
     font-size: 20pt;
     padding-top: 15px;
@@ -239,7 +247,7 @@ body{
     padding-bottom: 10px;
 }
 .container-card-title1 h3{
-    color: #e64cbf;
+    color: #e3e4e5;
     font-family: "Oswald", sans-serif;
     font-size: 26pt;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
@@ -249,35 +257,38 @@ body{
     padding-bottom: 10px;
 }
 .container-card-title2 h3{
-    color: #e64c4c;
+    color: #efb810;
     font-family: "Oswald", sans-serif;
     font-size: 26pt;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .container-card-title2 p{
-    color: rgb(15, 3, 180);
+    color: rgba(58, 28, 231, 0.884);
     font-family: "Bebas Neue", sans-serif;
     font-size: 20pt;
     padding-top: 15px;
 }
 .container-card-title1 p{
-    color: rgb(15, 3, 180);
+    color: rgba(58, 28, 231, 0.884);
     font-family: "Bebas Neue", sans-serif;
     font-size: 20pt;
     padding-top: 15px;
 }
 .container-card-informacion{
-    background-color: #4ce654;
+    background-color: rgb(191, 137, 112);
+    box-shadow: 1px 0 5px #000000;
     border-radius: 0 0 20px 20px;
     padding: 30px;
 }
 .container-card-informacion1{
-    background-color: #e64cbf;
+    background-color: #dbdbdb;
+    box-shadow: 1px 0 5px #000000;
     border-radius: 0 0 20px 20px;
     padding: 30px;
 }
 .container-card-informacion2{
-    background-color: #e64c4c;
+    background-color: #efb810;
+    box-shadow: 1px 0 5px #000000;
     border-radius: 0 0 20px 20px;
     padding: 30px;
 }
@@ -330,7 +341,7 @@ body{
 /*BOTON DE CARDS*/
 .btn-solicitar {
     display: inline-block;
-    background-color: rgba(4, 0, 255, 0.507);
+    background-color: rgba(47, 0, 255, 0.699);
     justify-items: center;
     color: #fff;
     text-decoration: none;
@@ -345,7 +356,7 @@ body{
 }
 
 .btn-solicitar:active{
-    background-color: rgba(161, 0, 0, 0.699);
+    background-color: rgba(5, 161, 0, 0.699);
     transform: translateY(-2px);
     box-shadow: 0px 10px 20px 2px rgba(34, 0, 128, 0.904);
 }
@@ -360,6 +371,7 @@ body{
     display: flex;
     flex-direction: row;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .caracteristicas-container{
     display: grid;
@@ -375,16 +387,19 @@ body{
     justify-content: center;
     text-align: center;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.596);
+    
 }
 .image-class-card img{
     width: 75px;
     margin: 10px;
+    filter: drop-shadow(5px 5px 10px #000);
 }
 .container-image-refer img{
     width: 850px;
     margin-left: 20px;
     margin-top: 25px;
     border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.596);
 }
 .cards-explicacion-caracteristica h3{
     font-family: "Manrope", sans-serif;
@@ -402,8 +417,7 @@ body{
     background-color: #18191b;
     color: white;
     height: 300px;
-    padding: 0;
-    margin: 0;
+
 }
 .informacion-company{
     margin-top: 25px;
@@ -414,6 +428,17 @@ body{
 .footer {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 1375px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #18191b;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.section-img-footer img{
+    width: 400px;
+    margin-left: 50px;
 }
 .copyrigth{
     background-color: #001A49;
@@ -448,8 +473,8 @@ body{
 
 .facebook img{
     width: 40px;
-    margin-left: 650px;
     margin-top: 100px;
+    margin-left: 150px;
 }
 .facebook a{
     text-decoration: none;
@@ -462,7 +487,7 @@ body{
 .instagram img{
     width: 40px;
     margin-top: 25px;
-    margin-left: 650px;
+    margin-left: 150px;
 }
 .instagram a{
     text-decoration: none;
@@ -474,70 +499,6 @@ body{
 }
 /*MEDIA QUERIES*/
 
-@media (700px <= width <= 1250px) {
-    .header {
-        background-color: rgb(31, 31, 31);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 5vw;
-        padding: 1vw 4%;
-        }
-        .nav {
-            display: flex;
-            flex-direction: row;
-        }
-        .nav-link {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            gap: 5px;
-            padding-top: .5vw;
-            padding-right: .5vw;
-        }
-}
-@media (min-width: 300px) and (max-width: 700px) {
-    .header {
-        background-color: rgb(31, 31, 31);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 5vw;
-        padding: 1vw 4%;
-        }
-        .nav {
-            display: flex;
-            flex-direction: row;
-        }
-        .nav-link {
-            display: none;
-        }
-        .nav-menu {
-            display: block;
-            position: absolute;
-            top: 15px; /* Ajusta según sea necesario */
-            right: 15px; /* Ajusta según sea necesario */
-            width: 75px; /* Define un ancho si es necesario */
-            height: 75px;
-            cursor: pointer;
-            filter: invert(100%);
-        }
-
-        .nav-img-menu {
-            width: 50px; /* Define un ancho si es necesario */
-            height: 50px;
-        }
-        .hero-container h1{
-            padding-left: 20px;
-            font-size: 2rem;
-            color: rgb(255, 255, 255);
-            text-shadow: 8px 8px 5px #ff1e0042,
-            3px 3px 2px #db2c0050,
-            4px 4px 2px #ff330049,
-            5px 5px 5px #ffffff2a;
-
-        }
+@media (max-width: 480px){
 
 }
