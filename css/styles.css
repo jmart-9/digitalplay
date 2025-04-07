@@ -439,6 +439,7 @@ body{
 .section-img-footer img{
     width: 210px;
     margin-left: 50px;
+    filter: drop-shadow(5px 5px 75px #ffffff);
 }
 .copyrigth{
     background-color: #001A49;
@@ -446,6 +447,7 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0;
+    z-index: 1;
 }
 .copyrigth h4{
     font-family: "Roboto Slab", serif;
@@ -474,7 +476,7 @@ body{
 .facebook img{
     width: 40px;
     margin-top: 100px;
-    margin-left: 250px;
+    margin-left: 300px;
 }
 .facebook a{
     text-decoration: none;
@@ -487,7 +489,7 @@ body{
 .instagram img{
     width: 40px;
     margin-top: 25px;
-    margin-left: 250px;
+    margin-left: 300px;
 }
 .instagram a{
     text-decoration: none;
