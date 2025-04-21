@@ -624,8 +624,15 @@ body{
         flex-direction: column;
         text-align: center;
     }
-    .hero-title{
-        font-size: 15pt;
+    .hero-section .hero-title{
+        font-size: 24pt;
+    }
+    .hero-section .hero-paragraph{
+        margin: 0;
+        font: 10pt;
+    }
+    .hero-section .cta{
+        margin-left: 30%;
     }
     .section-informacion-caracteristicas h2 {
         margin-top: 25px;
