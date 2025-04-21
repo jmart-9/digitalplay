@@ -651,12 +651,13 @@ body{
         max-width: 1020px;
         margin: 0 auto;
         overflow: hidden;
-        padding: 50px;
+        padding: 0px;
     }
+    
     .container-cards-internet{
         display: flex;
         margin: 15px 0px 0px 0px;
-        padding: 100px 100px;
+        padding: 0;
         flex-direction: column;
         gap: 50px;
         justify-content: center;
@@ -666,8 +667,9 @@ body{
         width: 100px;
     }
     .cards-internet{
+        padding: 0;
         height: auto;
-        width: 60vw;
+        width: 70vw;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -675,18 +677,27 @@ body{
     .section-caracteristicas{
         display: flex;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     .caracteristicas-container{
         display: grid;
         grid-template-columns: repeat(2 1fr);
         align-items: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     .card-caracteristica{
         width: 300px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     .container-image-refer img{
-        width: 400px;
-        align-items: center;
+        width: 300px;
+        margin: 0;
     }
     .footer-inicio{
         display: flex;
@@ -701,5 +712,20 @@ body{
         align-items: center;
         justify-content: center;
     }
-
+    .informacion-company p{
+        margin-left: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .facebook img{
+        margin: 0;
+        padding: 0;
+        width: 20px;
+    }
+    .instagram img{
+        margin: 0;
+        padding: 0;
+        width: 20px;
+    }
 }
