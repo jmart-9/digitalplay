@@ -548,11 +548,17 @@ body{
         align-items: center;
     }
 }
-@media (max-width: 800px){
+@media (max-width: 600px){
+    .container{
+        width: 550px;
+    }
     .hero-container{
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+    .hero-title{
+        font-size: 15pt;
     }
     .section-informacion-caracteristicas h2 {
         margin-top: 25px;
@@ -601,16 +607,92 @@ body{
         grid-template-columns: repeat(2 1fr);
         align-items: center;
     }
+    .card-caracteristica{
+        width: 300px;
+    }
     .container-image-refer img{
         width: 400px;
         align-items: center;
     }
 }
-@media (max-width: 600px){
-    .caracteristicas-containersss{
-        display: flex;
-        justify-content: space-between;
-        width: 600px;
-        padding: 0;
+@media (max-width: 400px){
+    .container{
+        width: 350px;
     }
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-title{
+        font-size: 15pt;
+    }
+    .section-informacion-caracteristicas h2 {
+        margin-top: 25px;
+        margin: 50px;
+        text-align: center;
+        justify-content: center;
+        font-family: "Bree Serif", serif;
+        font-size: 2rem;
+    }
+    .cta {
+        margin-left: 42%;
+    }
+    
+    .section-internet {
+        width: 100%;
+        max-width: 1020px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 50px;
+    }
+    .container-cards-internet{
+        display: flex;
+        margin: 15px 0px 0px 0px;
+        padding: 100px 100px;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-solicitar{
+        width: 100px;
+    }
+    .cards-internet{
+        height: auto;
+        width: 60vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-caracteristicas{
+        display: flex;
+        flex-direction: column;
+    }
+    .caracteristicas-container{
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        align-items: center;
+    }
+    .card-caracteristica{
+        width: 300px;
+    }
+    .container-image-refer img{
+        width: 400px;
+        align-items: center;
+    }
+    .footer-inicio{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .informacion-company{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
