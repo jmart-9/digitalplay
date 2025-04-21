@@ -369,15 +369,14 @@ body{
 }
 .section-caracteristicas{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 .caracteristicas-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 15px;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
 }
 .card-caracteristica{
     width: 150px;
@@ -599,14 +598,19 @@ body{
     }
     .caracteristicas-container{
         display: grid;
-        grid-template-columns: repeat(3);
+        grid-template-columns: repeat(2 1fr);
         align-items: center;
     }
     .container-image-refer img{
         width: 400px;
         align-items: center;
     }
-    .redes-sociales{
-        
+}
+@media (max-width: 600px){
+    .caracteristicas-containersss{
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        padding: 0;
     }
 }
