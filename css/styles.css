@@ -518,6 +518,7 @@ body{
     .container-cards-internet{
         display: flex;
         margin: 15px 0px 0px 0px;
+        height: auto;
         padding: 50px 50px;
         flex-direction: column;
         gap: 50px;
@@ -580,12 +581,13 @@ body{
     }
     .container-cards-internet{
         display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         margin: 15px 0px 0px 0px;
         padding: 100px 100px;
         flex-direction: column;
         gap: 50px;
-        justify-content: center;
-        align-items: center;
     }
     .btn-solicitar{
         width: 100px;
@@ -673,20 +675,27 @@ body{
     
     .section-internet {
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         max-width: 1020px;
         margin: 0 auto;
         overflow: hidden;
         padding: 0px;
     }
-    
+    .container-section-internet{
+        margin-bottom: 100px;
+    }
     .container-cards-internet{
         display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
         margin: 15px 0px 0px 0px;
         padding: 0;
         flex-direction: column;
         gap: 50px;
-        justify-content: center;
-        align-items: center;
+
     }
     .btn-solicitar{
         width: 100px;
