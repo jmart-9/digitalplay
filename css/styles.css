@@ -386,7 +386,6 @@ body{
     justify-content: center;
     text-align: center;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.596);
-    
 }
 .image-class-card img{
     width: 75px;
@@ -416,7 +415,6 @@ body{
     background-color: #18191b;
     color: white;
     height: 300px;
-
 }
 .informacion-company{
     margin-top: 25px;
@@ -455,15 +453,17 @@ body{
 }
 .informacion-company img{
     width: 175px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .informacion-company h3{
-    margin-top: 25px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
     font-family: "Roboto Slab", serif;
 }
 .informacion-company p{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     width: 300px;
     font-family: "Roboto Slab", serif;
 }
