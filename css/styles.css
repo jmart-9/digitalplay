@@ -638,13 +638,14 @@ body{
     
       .nav-menu {
         display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: white;
       }
     
       .nav-close {
         display: block;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
       }
     .hero-container{
         display: flex;
