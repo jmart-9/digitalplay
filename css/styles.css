@@ -209,6 +209,7 @@ body{
 .container-cards-internet{
     display: flex;
     margin: 15px 0px 0px 0px;
+    height: auto;
     padding: 50px 50px;
     flex-direction: row;
     gap: 50px;
