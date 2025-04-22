@@ -102,14 +102,12 @@ body{
     padding-right: 25px;
 }
 
-.nav-menu{
-    margin-left: auto;
-    cursor: pointer;
-    display: none;
-}
-
-.nav-close{
-    display: none;
+.nav-menu,
+.nav-close {
+  display: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .nav-img-menu{
