@@ -387,7 +387,7 @@ a {
     margin: 10px;
     font-family: "Manrope", sans-serif;
     font-size: 10pt;
-    text-align: justify;
+    text-align: center;
 }
 .footer-inicio{
     display: flex;
