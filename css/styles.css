@@ -324,7 +324,7 @@ a {
     color: #fff;
     text-decoration: none;
     text-align: center;
-    width: 200px;
+    width: 20vw;
     font-size: 16pt;
     font-family: "Bebas Neue", sans-serif;
     padding: 15px 15px;
@@ -357,12 +357,14 @@ a {
     flex-direction: row;
 }
 .card-caracteristica{
-    width: 150px;
-    height: 250px;
+    width: 20vw;
+    height: auto ;
     margin: 20px;
     border-radius: 15px;
+
     justify-content: center;
     text-align: center;
+    font-size: 3rem;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.596);
 }
 .image-class-card img{
@@ -452,8 +454,8 @@ a {
 
 .facebook img{
     width: 40px;
-    margin-top: 100px;
-    margin-left: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
 }
 .facebook a{
     text-decoration: none;
@@ -466,7 +468,7 @@ a {
 .instagram img{
     width: 40px;
     margin-top: 25px;
-    margin-left: 300px;
+    margin-left: 100px;
 }
 .instagram a{
     text-decoration: none;
@@ -504,7 +506,9 @@ a {
         justify-content: center;
         align-items: center;
     }
-    
+    .card-caracteristica{
+        height: 25vw;
+    }
     .cards-internet{
         height: auto;
         width: 50vw;
@@ -526,11 +530,35 @@ a {
         flex-direction: row;
         align-items: center;
     }
-}
-@media (max-width: 600px){
-    .container{
-        width: 550px;
+    .container-image-refer img{
+        width: 400px;
+        align-items: center;
     }
+    .informacion-company{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .informacion-company p{
+        margin-left: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .facebook a img{
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+        width: 40px;
+    }
+    .instagram img{
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        width: 40px;
+    }
+}
+@media (max-width: 700px){
     .hero-container{
         display: flex;
         flex-direction: column;
@@ -589,10 +617,34 @@ a {
     }
     .card-caracteristica{
         width: 300px;
+        height: auto;
     }
-    .container-image-refer img{
-        width: 400px;
+    .footer-inicio{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
         align-items: center;
+        justify-content: center;
+    }
+    .informacion-company{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .informacion-company p{
+        margin-left: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .redes-sociales{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .facebook{
+        margin-top: 10px;
     }
 }
 @media (max-width: 600px){
@@ -675,6 +727,7 @@ a {
         justify-content: center;
         margin: 15px 0px 0px 0px;
         padding: 0;
+        margin-bottom: 5vw;
         flex-direction: column;
         gap: 50px;
 
@@ -744,4 +797,5 @@ a {
         padding: 0;
         width: 20px;
     }
+
 }
