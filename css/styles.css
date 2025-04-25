@@ -10,6 +10,12 @@ manrope: font-family: "Manrope", sans-serif;
 bebas neue: font-family: "Bebas Neue", sans-serif;
 */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .nav-logo{
     width: 150px;
 }
@@ -21,15 +27,7 @@ bebas neue: font-family: "Bebas Neue", sans-serif;
     
     
 body{
-    font-family: 'font-family: "Oswald", serif;' 
-}
-.container-nav{
-    width: 100%;
-    height: 75px;
-    max-width: 100%;
-    background-color: rgba(0, 0, 0, 0.034);
-    transform: translateY(-2px);
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.596);
+    font-family: "Oswald", serif;
 }
 .container {
     width: 100%;
@@ -65,85 +63,43 @@ body{
 }
 
 /* NAV */
-.nav{
-    --padding-container: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
+nav {
+    background-color: #1616165d;
+    padding: 10px 20px;
 }
-
-.nav-logo{
-    font-weight: 200px;
-    margin-left: 15px;
+nav img {
+    width: 100px;
+    height: auto;
 }
-
-.nav-link{
-    font-family: "Manrope", sans-serif;
-    margin-left: auto;
-    padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
-    gap: 2em;
-}
-
-.nav-link a:hover {
-    color: rgb(236, 87, 0);
-}
-
-.nav-items{
-    list-style: none;
-}
-
-.nav-links{
-    color: #fff;
-    text-decoration: none;
-    padding-right: 25px;
-}
-.nav {
+.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    position: relative;
 }
-
-.nav-link {
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
 }
-
-.nav-links {
+li {
+    padding: 10px;
+}
+a:hover {
+    color: chocolate;
+}
+a {
+    color: white;
     text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
 }
-
-/* Oculta el input checkbox */
-#menu_hamburguesa {
-    display: none;
-}
-
-
-/* Icono hamburguesa (visible en mobile) */
-.nav-menu {
-    display: none;
-    cursor: pointer;
-}
-
-.nav-img-menu {
-    width: 30px;
-    height: 30px;
-}
-
 /*HERO CONTAINER*/
-
-.hero-section{
-    display: grid;
-    grid-auto-rows: max-content;
-}
 
 .hero-container{
     max-width: 1250px;
@@ -640,9 +596,7 @@ body{
     }
 }
 @media (max-width: 600px){
-    .container{
-        width: 350px;
-    }
+
     .hero-container{
         display: flex;
         flex-direction: column;
@@ -666,32 +620,36 @@ body{
         font-family: "Bree Serif", serif;
         font-size: 2rem;
     }
-    .nav-link-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        flex-direction: column;
-        align-items: center;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
 
-    .nav-menu {
+    nav img {
+        width: 75px;
+        height: auto;
+        margin: 1%;
+    }
+    .menu-icon {
         display: block;
-        cursor: pointer;
+        z-index: 3;
+        margin: 1%;
     }
-
-    /* Mostrar menú si checkbox está activado */
-    #menu_hamburguesa:checked ~ .nav-link-menu {
-        max-height: 300px;
+    ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #333;
     }
-
-    /* Ocultar links en desktop */
-    .nav-link-menu {
+    ul.active {
+        padding-top: 15%;
         display: flex;
+        padding-bottom: 100%;
+        z-index: 2;
+    }
+    li {
+        text-align: center;
+        padding: 15px;
     }
     .cta {
         margin-left: 42%;
