@@ -507,7 +507,7 @@ a {
         align-items: center;
     }
     .card-caracteristica{
-        height: 25vw;
+        height: 35vw;
     }
     .cards-internet{
         height: auto;
@@ -547,18 +547,18 @@ a {
     }
     .facebook a img{
         margin: 0;
-        margin-top: 20px;
+        margin-top: 50px;
         padding: 0;
         width: 40px;
     }
     .instagram img{
         margin: 0;
-        margin-top: 10px;
+        margin-top: 20px;
         padding: 0;
         width: 40px;
     }
 }
-@media (max-width: 700px){
+@media (max-width: 800px){
     .hero-container{
         display: flex;
         flex-direction: column;
@@ -617,7 +617,6 @@ a {
     }
     .card-caracteristica{
         width: 300px;
-        height: auto;
     }
     .footer-inicio{
         display: flex;
@@ -644,7 +643,7 @@ a {
         text-align: center;
     }
     .facebook{
-        margin-top: 10px;
+        margin-top: 25px;
     }
 }
 @media (max-width: 600px){
@@ -760,6 +759,7 @@ a {
     }
     .card-caracteristica{
         width: 300px;
+        height: auto;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -795,7 +795,7 @@ a {
     .instagram img{
         margin: 0;
         padding: 0;
-        width: 20px;
+        width: 40px;
     }
 
 }
